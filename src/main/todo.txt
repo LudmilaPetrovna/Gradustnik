@@ -1,0 +1,49 @@
++доделать рефакторинг wifipro
++Заменить слово "градусов" на символ
++Заменить адрес конфы
++Заменить либу ds18b20
++Исправить +/- в индикаторах
+Добавить несколько вариантов вайфая на файловую систему
++Попробовать отломать sntp
++передергивать вайфай на /wifioff
++останавливать/возобновлять sntp
+добавить мобильный роутер в конфигурацию
+
++hello.txt -> get flash size
++write ota
++read ota
+-read sha256 ota
++reboot
++void f_erase_chip();
+
+
+add watchdog
++add success ota update
+
+
+
+Friendly with Win98
+Lead free, asbestos free, co2 free
+No webtechnology used, NO CSS USED
+No webtechnology were harmed
+No browser required
+No firefox required
+No chrome required
+No arduino, no platformio
+0% JSON, 0% XML
+Developed in console
+No mouse used during development
+VIM compatible
+NO PHP USED
+NO C++ USED
+No C# USED
+NO RUST USED
+No 5G required
+No windows 10/11 required
+Friendly usage with Windows 7
+Debugged with printf
+Mumble compatible, build with Mumble technology
+Flashable with TFTP, tftpd64 supported
+No modbus used
+No python, no python modules, no python developers
+No javascript, no typescript, no webassembly
