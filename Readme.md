@@ -53,6 +53,36 @@
 
 ![./imgs/win98-2.gif](./imgs/win98-2.gif) ![./imgs/2-2.gif](./imgs/2-2.gif)
 
+* No webtechnology used, NO CSS USED
+* No webtechnology were harmed
+* No browser required
+* No firefox required
+* No chrome required
+* No arduino, no platformio
+* 0% JSON, 0% XML
+* Developed in console
+* No mouse used during development
+* VIM compatible
+* NO PHP USED
+* NO C++ USED
+* No C# USED
+* NO RUST USED
+* No 5G required
+* No windows 10/11 required
+* Friendly usage with Windows 7
+* Debugged with printf
+* Mumble compatible, build with Mumble technology
+* Flashable with TFTP, tftpd64 supported
+* No modbus used
+* No python, no python modules, no python developers
+* No javascript, no typescript, no webassembly
+
+# Todo
+
+* Добавить поддержку Jabber (авторизация, вход в несколько конф)
+* Добавить поддержку NetMeeting
+* Добавить поддержку ICQ (OSCAR)
+
 # Лицензия
 
 Вообще статус лицензии не очень понятен, так как код основан на примере hello_world от самого Espressif, в проект входят сторонние библиотеки, которые к тому же пришлось править.
