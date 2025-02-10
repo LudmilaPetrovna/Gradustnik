@@ -1,3 +1,5 @@
+#!/usr/bin/perl
+
 open(dd,$ARGV[0]);
 read(dd,$file,-s(dd));
 close(dd);
@@ -5,8 +7,10 @@ close(dd);
 $file=~s/\r//gs;
 $file=~s/\n[ \t]*\n\s+/\n\n/g;
 $file=~s/\n[ \t]+/\n/g;
+$file=~s/[\t ]\n/\n/gs; #remove spaces at end of lines
 $file=~s/(\n\/\/)\s+/$1/g; # remove spaces in comment
-$file=~s/(\([^\)]*\))\s*\{\s*/$1\{\n/gs;
+$file=~s/(\([^\)]*\))\s*\{\s*/$1\{\n/gs; # open { in same line
+$file=~s/(\([^\)]*\))\s*\{\s*\/\//$1\{ \/\//gs; # open { in same line, comment at same line
 $file=~s/(\n[^\(\)\[\]\{\}=\n]+?)\s*=\s*/$1=/gs;
 
 %strings=();
@@ -29,6 +33,10 @@ $indent-=$close-$open;
 if($indent<0){
 $indent=0;
 }
+}
+
+if($line=~/^\s*$/s){
+$addon=-$indent;
 }
 
 $out.="".("\t" x ($indent+$addon)).$line."\n";
